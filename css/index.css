@@ -195,7 +195,8 @@ body .upperHalf .missionStmnt h2 {
   text-shadow: #1D595A 5px 5px;
 }
 body .upperHalf .missionStmnt p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
   width: 60%;
   margin: 1%;
   background: #55530094;
@@ -204,9 +205,15 @@ body .upperHalf .missionStmnt p {
 }
 body .upperHalf .socialMedia {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  body .upperHalf .socialMedia {
+    flex-direction: column;
+  }
 }
 body .upperHalf .socialMedia .smIcons {
   display: flex;
@@ -234,8 +241,12 @@ body .projects {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-body .projects h2 {
+body .projects #projectTitle {
   width: 50%;
   border-radius: 30px;
   text-align: center;
@@ -244,4 +255,58 @@ body .projects h2 {
   color: #D5E3E6;
   text-shadow: #771f04 5px 5px;
   font-weight: 1000;
+}
+body .projects .projectThumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  body .projects .projectThumbnail {
+    flex-direction: column;
+  }
+}
+body .projects .projectThumbnail .previewContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  body .projects .projectThumbnail .previewContainer {
+    flex-direction: column;
+  }
+}
+body .projects .projectThumbnail .previewContainer .thumbnail {
+  border-radius: 10px;
+  background-color: #60BAC2;
+  box-shadow: 15px 15px 0 0 rgba(0, 0, 0, 0.4);
+  margin: 3%;
+  width: 44%;
+}
+@media (max-width: 500px) {
+  body .projects .projectThumbnail .previewContainer .thumbnail {
+    width: 100%;
+  }
+}
+body .projects .projectThumbnail .previewContainer .thumbnail a {
+  display: block;
+}
+body .projects .projectThumbnail .previewContainer .thumbnail .projectImage {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 15em;
+  width: 100%;
+  object-fit: cover;
+}
+body .projects .projectThumbnail .previewContainer .thumbnail h4 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+  padding: 3%;
+  font-weight: 900;
+  color: #D5E3E6;
+  text-shadow: #1D595A 1px 2px 6px;
+  text-align: center;
 }

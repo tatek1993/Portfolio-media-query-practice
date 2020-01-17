@@ -4,6 +4,7 @@
 
 <head>
     <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>externalStyle.html</title>
     <script src="https://kit.fontawesome.com/c18655fd42.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
@@ -38,9 +39,17 @@
 
         <section class ="socialMedia">
             <div class ="smIcons">
-                <div class="icon"> <i class="fab fa-linkedin"></i></div>
+                <div class="icon"> 
+                    <a href="https://www.linkedin.com/in/tate-keller-16ab7a183/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             
-                <div class="icon"><i class="fab fa-github-square"></i></div>
+                <div class="icon">
+                    <a href="https://github.com/tatek1993">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </div>
             </div>
             <div class = "smIcons">
                 <div class ="icon"><i class="fab fa-twitter-square"></i></div>
@@ -51,32 +60,38 @@
 
     <section class="projects">
         <h2 id = "projectTitle">Check out some of my projects</h2>
-        <div class="projectThumbnail">
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
-            <div class="thumbnail">
-                <img src = "">
-                <h4 class="projectName"></h4>
-            </div>
 
+        <div class="projectThumbnail">
+
+            <div class="previewContainer">
+                <div class="thumbnail">
+                    <a href="https://github.com/MedicinalCabinet/UI">
+                        <img class="projectImage" alt= "Med Cabinet" src ="images/medcab.PNG">
+                    </a>
+                    <h4 class="projectName">Med Cabinet: Cannabis Strain Suggester Landing Page</h4>
+                </div>
+                <div class="thumbnail">
+                    <a href="https://github.com/tatek1993/DOM-II/blob/master/index.html">
+                        <img class="projectImage" src="images/awfultaxidermy.PNG">
+                    </a>
+                    <h4 class="projectName">Surprise Taxidermy!: Interacting With The DOM</h4>
+                </div>
+            </div>
+            <div class="previewContainer">
+                <div class="thumbnail">
+                    <a href="https://github.com/tatek1993/Sprint-Challenge--Advanced-CSS">
+                    <img class="projectImage" src="images/spacewalkers.PNG">
+                    </a>
+                    <h4 class="projectName">Space Walkers: Responsive CSS</h4>
+                </div>
+                <div class="thumbnail">
+                    <a href="https://github.com/tatek1993/github-usercard">
+                        <img class="projectImage" src="images/githubtiles.PNG">
+                    </a>
+                    <h4 class="projectName">Github User Cards: Creating Using Data From the Github API</h4>
+                </div>
+             </div>
+            
         </div>
-    </section>
+    </section> 
 </body>
