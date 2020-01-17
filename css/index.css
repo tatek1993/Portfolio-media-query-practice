@@ -199,7 +199,7 @@ body .upperHalf .missionStmnt p {
   line-height: 1.5;
   width: 60%;
   margin: 1%;
-  background: #55530094;
+  background-color: #a3a24f79;
   padding: 3%;
   border-radius: 30px;
   text-align: center;
@@ -303,14 +303,32 @@ body .projects .projectThumbnail .previewContainer .thumbnail .projectImage {
   width: 100%;
   object-fit: cover;
 }
-body .projects .projectThumbnail .previewContainer .thumbnail h4 {
+body .projects .projectThumbnail .previewContainer .thumbnail .projectName {
   font-size: 1.5rem;
   line-height: 1.5em;
-  padding: 3%;
+  padding-top: 3%;
+  padding-bottom: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
   font-weight: 900;
   color: #D5E3E6;
   text-shadow: #1D595A 1px 2px 6px;
   text-align: center;
+}
+body .projects .projectThumbnail .previewContainer .thumbnail .projectBlurb {
+  padding: 3%;
+}
+body .projects .projectThumbnail .previewContainer .thumbnail .projectBlurb p,
+body .projects .projectThumbnail .previewContainer .thumbnail .projectBlurb ul {
+  font-size: 1.2rem;
+  list-style: square;
+  list-style-position: inside;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+  text-shadow: #1D595A 1px 2px 6px;
+  font-weight: bold;
 }
 body #footer {
   padding: 3% 0 3% 0;
@@ -343,11 +361,24 @@ body #footer .contact .contactContainer {
   justify-content: center;
   align-items: flex-start;
 }
+@media (max-width: 850px) {
+  body #footer .contact .contactContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 body #footer .contact .contactContainer p {
-  font-size: 1.5rem;
-  width: 80%;
+  font-size: 2rem;
+  width: 50%;
   padding: 3%;
   text-shadow: #771f04 2px 2px;
+  line-height: 2;
+}
+@media (max-width: 850px) {
+  body #footer .contact .contactContainer p {
+    width: 90%;
+  }
 }
 body #footer .contact .contactContainer .contactInfo {
   display: flex;
@@ -355,6 +386,13 @@ body #footer .contact .contactContainer .contactInfo {
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 2%;
+  padding: 3%;
+  width: 50%;
+}
+@media (max-width: 850px) {
+  body #footer .contact .contactContainer .contactInfo {
+    width: 90%;
+  }
 }
 body #footer .contact .contactContainer .contactInfo li {
   font-size: 1.5rem;
