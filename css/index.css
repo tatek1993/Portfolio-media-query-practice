@@ -222,6 +222,12 @@ body .upperHalf .missionStmnt p {
     margin: 2%;
   }
 }
+@media (max-width: 500px) {
+  body .upperHalf .missionStmnt p {
+    width: 90%;
+    margin: 2%;
+  }
+}
 body .upperHalf .socialMedia {
   display: flex;
   flex-wrap: wrap;
