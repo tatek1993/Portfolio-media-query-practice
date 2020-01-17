@@ -153,7 +153,8 @@ body .introSection .introContainer {
   margin: 4%;
 }
 body .introSection .introContainer .mainTitle {
-  font-size: 4rem;
+  font-size: 5rem;
+  text-shadow: #771f04 5px 5px;
   padding: 3%;
   margin: 2%;
 }
@@ -168,13 +169,21 @@ body .introSection .introContainer p {
   padding: 3%;
   margin: 4%;
 }
-body .missionStmnt {
+body .upperHalf {
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.986), rgba(70, 45, 24, 0.411)), url("/images/mpls.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body .upperHalf .missionStmnt {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .missionStmnt h2 {
+body .upperHalf .missionStmnt h2 {
   width: 50%;
   border-radius: 30px;
   text-align: center;
@@ -183,24 +192,33 @@ body .missionStmnt h2 {
   margin: 1%;
   color: #60BAC2;
   font-weight: 1000;
+  text-shadow: #1D595A 5px 5px;
 }
-body .socialMedia {
+body .upperHalf .missionStmnt p {
+  font-size: 2rem;
+  width: 60%;
+  margin: 1%;
+  background: #55530094;
+  padding: 3%;
+  border-radius: 30px;
+}
+body .upperHalf .socialMedia {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-body .socialMedia .smIcons {
+body .upperHalf .socialMedia .smIcons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-body .socialMedia .smIcons .icon {
+body .upperHalf .socialMedia .smIcons .icon {
   padding: 5%;
 }
-body .socialMedia .smIcons .icon .fab,
-body .socialMedia .smIcons .icon .fas {
+body .upperHalf .socialMedia .smIcons .icon .fab,
+body .upperHalf .socialMedia .smIcons .icon .fas {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,4 +226,22 @@ body .socialMedia .smIcons .icon .fas {
   width: 8rem;
   font-size: 8rem;
   color: #60BAC2;
+}
+body .projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.068)), url("/images/sidewalk.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+body .projects h2 {
+  width: 50%;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 4rem;
+  padding: 2%;
+  color: #D5E3E6;
+  text-shadow: #771f04 5px 5px;
+  font-weight: 1000;
 }

@@ -4,9 +4,8 @@ body{
     // background-color: @espresso;
     background: rgb(143,98,77);
     background: radial-gradient(circle, rgba(143,98,77,1) 39%, rgba(54,37,11,1) 100%);
-
-
     color: @sneaker;
+
     .introSection {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/banner.jpg");
         height: 100%;
@@ -25,7 +24,8 @@ body{
             margin: 4%;
 
             .mainTitle{
-                font-size: 4rem;
+                font-size: 5rem;
+                text-shadow: @brick 5px 5px;
                 padding: 3%;
                 margin: 2%;
             }
@@ -45,49 +45,88 @@ body{
         }
         
     }
-    .missionStmnt {
-        display: flex;
-        .flex(column, center, center);
+    .upperHalf{
+        background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.986), rgba(70, 45, 24, 0.411)), url("/images/mpls.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        .missionStmnt {
+            display: flex;
+            .flex(column, center, center);
+
+            h2{
+                // background: rgb(29,89,90);
+                // background: radial-gradient(circle, rgba(29,89,90,1) 34%, rgba(18,48,58,1) 100%);
+                width: 50%;
+                border-radius: 30px;
+                text-align: center;
+                font-size: 4rem;
+                padding: 2%;
+                margin: 1%;
+                color: @turquoiselight;
+                font-weight: 1000;
+                text-shadow: @turquoisedark 5px 5px;
+            }
+            p {
+                font-size: 2rem;
+                width: 60%;
+                margin: 1%;
+                background: #55530094;
+                padding: 3%;
+                border-radius: 30px;
+            }
+        }
+        .socialMedia{
+            display: flex;
+            .flex(row, center, center);
+
+            .smIcons{
+                display: flex;
+                .flex(row, center, center);
+                // margin: 2%;
+                
+
+                .icon {
+                    // margin: 5%;
+                    padding: 5%;
+
+                .fab, .fas{
+                    display: flex;
+                    .flex(row, center, center);
+                    width: 8rem;
+                    font-size: 8rem;
+                    color: @turquoiselight;
+                    
+
+                    }  
+                }
+                
+                
+            }
+        }    
+    }
+
+    .projects{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.068)), url("/images/sidewalk.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
 
         h2{
-            // background: rgb(29,89,90);
-            // background: radial-gradient(circle, rgba(29,89,90,1) 34%, rgba(18,48,58,1) 100%);
             width: 50%;
             border-radius: 30px;
             text-align: center;
             font-size: 4rem;
             padding: 2%;
-            margin: 1%;
-            color: @turquoiselight;
+            color: @sneaker;
+            text-shadow: @brick 5px 5px;
             font-weight: 1000;
         }
     }
-    .socialMedia{
-        display: flex;
-        .flex(row, center, center);
-
-        .smIcons{
-            display: flex;
-            .flex(row, center, center);
-            // margin: 2%;
-            
-
-            .icon {
-                // margin: 5%;
-                padding: 5%;
-
-               .fab, .fas{
-                display: flex;
-                .flex(row, center, center);
-                width: 8rem;
-                font-size: 8rem;
-                color: @turquoiselight;
-                
-
-                }  
-            }
-            
-               
-        }
-    }
+   
 }
