@@ -216,6 +216,12 @@ body .upperHalf .missionStmnt p {
   text-shadow: #36250B 2px 2px 4px;
   box-shadow: 25px 25px 0 0 rgba(0, 0, 0, 0.466);
 }
+@media (max-width: 850px) {
+  body .upperHalf .missionStmnt p {
+    width: 90%;
+    margin: 2%;
+  }
+}
 body .upperHalf .socialMedia {
   display: flex;
   flex-wrap: wrap;
