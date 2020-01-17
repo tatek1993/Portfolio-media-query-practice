@@ -198,6 +198,12 @@ body .upperHalf .missionStmnt h2 {
   font-weight: 1000;
   text-shadow: #1D595A 5px 5px;
 }
+@media (max-width: 850px) {
+  body .upperHalf .missionStmnt h2 {
+    width: 90%;
+    margin: 2%;
+  }
+}
 body .upperHalf .missionStmnt p {
   font-size: 1.5rem;
   line-height: 1.5;
@@ -221,7 +227,7 @@ body .upperHalf .socialMedia {
   padding-left: 3%;
   padding-right: 3%;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   body .upperHalf .socialMedia {
     flex-direction: column;
   }
@@ -268,6 +274,11 @@ body .projects #projectTitle {
   text-shadow: #771f04 5px 5px;
   font-weight: 1000;
 }
+@media (max-width: 850px) {
+  body .projects #projectTitle {
+    width: 90%;
+  }
+}
 body .projects .projectThumbnail {
   display: flex;
   flex-direction: row;
@@ -282,13 +293,16 @@ body .projects .projectThumbnail {
 }
 body .projects .projectThumbnail .previewContainer {
   display: flex;
+  margin: 2%;
   flex-direction: row;
   width: 90%;
   flex-wrap: wrap;
 }
-@media (max-width: 500px) {
+@media (max-width: 850px) {
   body .projects .projectThumbnail .previewContainer {
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 body .projects .projectThumbnail .previewContainer .thumbnail {
@@ -300,7 +314,7 @@ body .projects .projectThumbnail .previewContainer .thumbnail {
 }
 @media (max-width: 500px) {
   body .projects .projectThumbnail .previewContainer .thumbnail {
-    width: 100%;
+    width: 80%;
   }
 }
 body .projects .projectThumbnail .previewContainer .thumbnail a {
@@ -360,6 +374,12 @@ body #footer .contact .contactTitle {
   color: #D5E3E6;
   text-shadow: #771f04 5px 5px;
   font-weight: 1000;
+  margin-bottom: 2%;
+}
+@media (max-width: 850px) {
+  body #footer .contact .contactTitle {
+    width: 90%;
+  }
 }
 body #footer .contact .contactContainer {
   background-color: #a3a24f79;
@@ -410,6 +430,11 @@ body #footer .contact .contactInfo li {
   font-size: 1.5rem;
   line-height: 2;
   text-shadow: #771f04 2px 2px;
+}
+@media (max-width: 850px) {
+  body #footer .contact .contactInfo li {
+    overflow-wrap: break-word;
+  }
 }
 body #footer .contact .contactInfo li a {
   text-decoration: none;
