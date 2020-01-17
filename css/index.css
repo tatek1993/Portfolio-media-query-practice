@@ -289,6 +289,7 @@ body .projects #projectTitle {
 @media (max-width: 850px) {
   body .projects #projectTitle {
     width: 90%;
+    margin: 3%;
   }
 }
 body .projects .projectThumbnail {
@@ -391,6 +392,7 @@ body #footer .contact .contactTitle {
 @media (max-width: 850px) {
   body #footer .contact .contactTitle {
     width: 90%;
+    margin: 3%;
   }
 }
 body #footer .contact .contactContainer {
